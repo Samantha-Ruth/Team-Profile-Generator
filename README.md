@@ -19,9 +19,9 @@ If the user already has node installed on their device, they can download this p
 
 ## Usage
 
-The user will receive a series of prompts, asking for members of their team.  It will start out with the manager, and then ask whether or not the user would like to enter other employees, either an engineer or an intern.  The user can enter as many engineers and interns as they would like to for their team.  
+The user will receive a series of prompts, asking for members of their team.  It will start out with the manager, and then ask whether or not the user would like to enter other employees, either an engineer or an intern.  The user can enter as many engineers and interns as they would like for their team.  
 
-When the user is finished entering their information, an html file is created with "My Team" on top, and then a listing of the members of the team, their role, their ID, their email, and their office number, gitHub username, and school based on whether they are managers, engineers, or interns, respectivelly.  When the user clicks on an email, .  When they click on a gitHub address, they are taken to that gitHub user's homepage.  
+When the user is finished entering their information, an html file is created with "My Team" on top, and then a listing of the members of the team, their role, their ID, their email, and their office number, gitHub username, and school based on whether they are managers, engineers, or interns, respectively.  When the user clicks on an email, an autopopulated email server pops up.  When they click on a gitHub address, they are taken to that gitHub user's homepage.  
 
 ***  IMAGES **** 
 
