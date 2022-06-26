@@ -6,7 +6,6 @@ const Employee = require('./lib/Employee')
 
 const generateHtml = require('./src/page-template');
 const { writeFile, copyFile } = require('./utils/generate-site.js');
-const RawListPrompt = require('inquirer/lib/prompts/rawlist');
 
 const teamMembers = [];
 
@@ -16,7 +15,7 @@ initializeTeam = () => {
 
 addManager = () => {
     inquirer
-        .prompt(
+        .prompt([
             {
                 type: 'text',
                 name: 'name',
@@ -28,76 +27,64 @@ addManager = () => {
                         console.log("Please enter the team manager's name.");
                         return false;
                     }
-                },
+                }
             },
-            // {
-            //     type: 'input',
-            //     name: 'managerID',
-            //     message: "What is the team manager's ID?",
-            //     validate: managerID => {
-            //         if (managerID) {
-            //             return true;
-            //         } else {
-            //             console.log("Please enter the team manager's ID.");
-            //             return false;
-            //         }
-            //     }
-            // },
-            // {
-            //     type: 'input',
-            //     name: 'managerEmail',
-            //     message: "What is the team manager's email address?",
-            //     validate: managerEmail => {
-            //         if (managerEmail) {
-            //             return true;
-            //         } else {
-            //             console.log("Please enter the manager's email address.");
-            //             return false;
-            //         }
-            //     }
-            // },
-            // {
-            //     type: 'input',
-            //     name: 'managerOffice',
-            //     message: "What is the team manager's office number?",
-            //     validate: managerOffice => {
-            //         if (managerOffice) {
-            //             return true;
-            //         } else {
-            //             console.log("Please enter the manager's office number.");
-            //             return false;
-            //         }
-            //     }
-            // }
-            )
-            .then((answers) => {
-                console.log(answers)
-            })
+            {
+                type: 'input',
+                name: 'managerID',
+                message: "What is the team manager's ID?",
+                validate: managerID => {
+                    if (managerID) {
+                        return true;
+                    } else {
+                        console.log("Please enter the team manager's ID.");
+                        return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
+                name: 'managerEmail',
+                message: "What is the team manager's email address?",
+                validate: managerEmail => {
+                    if (managerEmail) {
+                        return true;
+                    } else {
+                        console.log("Please enter the manager's email address.");
+                        return false;
+                    }
+                }
+            },
+            {
+                type: 'input',
+                name: 'managerOffice',
+                message: "What is the team manager's office number?",
+                validate: managerOffice => {
+                    if (managerOffice) {
+                        return true;
+                    } else {
+                        console.log("Please enter the manager's office number.");
+                        return false;
+                    }
+                }
+            }]
             .then((answers) => {
                 teamMembers.push(answers)
             })
             .then((teamMembers) => {
                 console.log(teamMembers)
             })
-            .then(defineManager => {
-                this.name = new Employee(this.name);
+            // .then(defineManager => {
+            //     this.name = new Employee(this.name);
 //                 // name, id, email, officeNumber
 //                 this.managerId = new Manager('id');
 //                 // this.managerEmail = new Manager('email');
 //                 // this.managerOffice = new Manager('officeNumber');
 //             })
 //             .then((answers) => {
-//                 teamMembers.push(answers)
-            })
-            .then(callItems)
-};
-
-callItems = () => {
-console.log(Manager.name)
-console.log(Employee.name)
-console.log(`${this.managerName}`);
-console.log(teamMembers);
-};
+// //                 teamMembers.push(answers)
+//             })
+        )}
 
 
 
