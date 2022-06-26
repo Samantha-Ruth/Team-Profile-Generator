@@ -21,7 +21,7 @@ const generateEmployee = employeeText => {
 
 module.exports = templateData => {
     // destructure page data by section
-    const { managerOffice, gitHub, school, ...header } = templateData;
+    const { managerOffice, engineerGitHub, internSchool, ...header } = templateData;
     return `
     <!DOCTYPE html>
 <html>
@@ -42,17 +42,16 @@ module.exports = templateData => {
     <main>
         <section class="flex flex-row justify-evenly p-10 flex-wrap">
             <div class="bg-teal-900 border-2 border-teal-600 w-1/4 m-5 shadow-2xl">
-                <h2 class = "text-4xl font-bold p-2 text-zinc-200">${header.name}</h2>
-                <h3 class = "text-3xl font-bold p-2 text-zinc-200">${header.role}</h3>
+                <h2 class = "text-4xl font-bold p-2 text-zinc-200">Name</h2>
+                <h3 class = "text-3xl font-bold p-2 text-zinc-200">Manager</h3>
                 <div class="bg-teal-200 pt-5 pr-2 pb-5 pl-2">
                     <div class="flex flex-row"></div>
-                        <h4 class = "bg-white border border-teal-200">${header.id}</h4>
-                        <h4 class = "bg-white border border-teal-200">${header.email}</h4>
+                        <h4 class = "bg-white border border-teal-200">ID</h4>
+                        <h4 class = "bg-white border border-teal-200">Email</h4>
                         <h4 class = "bg-white border border-teal-200">${managerOffice}</h4>
                     </div>
                 </div>
             </div>
-            ${generateEmployee(employee)}
 
             <div class="justify-left bg-teal-900 border-2 border-teal-600 w-1/4 m-5 shadow-2xl">
                 <h2 class = "text-4xl font-bold p-2 text-zinc-200">Name</h2>

@@ -13,10 +13,10 @@ const promptUser = () => {
     .prompt([
         {
             type: 'input',
-            name: 'name',
+            name: 'managerName',
             message: "What is the team manager's name?",
-            validate: name => {
-                if (name) {
+            validate: managerName => {
+                if (managerName) {
                     return true;
                 } else {
                     console.log("Please enter the team manager's name.");
@@ -81,33 +81,36 @@ const promptEmployee = () => {
     ])
     .then((answers) => {
         if (answers.newTeamMember === 'Engineer') {
-            console.log(teamMembers)
             promptEngineer()
         }
         if (answers.newTeamMember === 'Intern') {
-            console.log(teamMembers)
             promptIntern()
         }
+        if (answers.newTeamMember === "I don't want to add any more team members") {
+            console.log(teamMembers);
+            console.log(teamMembers[0].managerName);
+            managerName => (teamMember[0].managerName);
+            console.log(managerName);
+            return
+        }
     })
-    .then((answers) =>(console.log(answers)));
 }
 
 const promptEngineer = engineerData => {
-
     console.log(`
-    =======================
-    ADD ANOTHER TEAM MEMBER
-    =======================
+    =================
+    ADD AN ENGINEER
+    =================
     `)
 
     return inquirer
         .prompt([
             {
                 type: 'input',
-                name: 'name',
+                name: 'engineerName',
                 message: "What is the engineer's name?",
-                validate: name => {
-                    if (name) {
+                validate: engineerName => {
+                    if (engineerName) {
                         return true;
                     } else {
                         console.log("Please enter the engineer's name.");
@@ -157,16 +160,15 @@ const promptEngineer = engineerData => {
         ])
         .then((answers) => {
         teamMembers.push(answers)
-        console.log(answers)
         promptEmployee()
     })
 };
 
 const promptIntern = internData => {
     console.log(`
-        =======================
-        ADD ANOTHER TEAM MEMBER
-        =======================
+        =============
+        ADD AN INTERN
+        =============
         `)
     return inquirer
         .prompt([
@@ -232,22 +234,22 @@ const promptIntern = internData => {
 
 promptUser()
     .then(promptEmployee)
-    .then(employeeData => {
-        return generateHtml(employeeData);
-        })
-    .then(pageHTML => {
-        return writeFile(pageHTML);
-        })
-    .then(writeFileResponse => {
-        console.log(writeFileResponse);
-        return copyFile();
-        })
-    .then(copyFileResponse => {
-        console.log(copyFileResponse);
-    })
-    .catch(err => {
-        console.log(err)
-    });
+    // .then(employeeData => {
+    //     return generateHtml(employeeData);
+    //     })
+    // .then(pageHTML => {
+    //     return writeFile(pageHTML);
+    //     })
+    // .then(writeFileResponse => {
+    //     console.log(writeFileResponse);
+    //     return copyFile();
+    //     })
+    // .then(copyFileResponse => {
+    //     console.log(copyFileResponse);
+    // })
+    // .catch(err => {
+    //     console.log(err)
+    // });
 
 
 
