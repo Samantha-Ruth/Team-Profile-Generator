@@ -28,6 +28,7 @@ When the user is finished entering their information, an html file is created wi
 ## Links
 
 link to video of tests: https://drive.google.com/file/d/1nKCxbWm18uSKE947XxkB7CZBlH1g-K3P/view
+link to video of command line prompts: https://drive.google.com/file/d/13xj8Nfie1BrWg-LqWOw_tJuvRVys9fHr/view
 
 Link to video of project: 
 
