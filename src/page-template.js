@@ -21,7 +21,7 @@ const generateEmployee = employeeText => {
 
 module.exports = templateData => {
     // destructure page data by section
-    const { office, gitHub, school, ...header } = templateData;
+    const { managerOffice, gitHub, school, ...header } = templateData;
     return `
     <!DOCTYPE html>
 <html>
@@ -48,7 +48,7 @@ module.exports = templateData => {
                     <div class="flex flex-row"></div>
                         <h4 class = "bg-white border border-teal-200">${header.id}</h4>
                         <h4 class = "bg-white border border-teal-200">${header.email}</h4>
-                        <h4 class = "bg-white border border-teal-200">${office}</h4>
+                        <h4 class = "bg-white border border-teal-200">${managerOffice}</h4>
                     </div>
                 </div>
             </div>
@@ -94,9 +94,5 @@ module.exports = templateData => {
     </footer>
 </body>
 </html>
-    
-    
-    
-    
     `
 }
