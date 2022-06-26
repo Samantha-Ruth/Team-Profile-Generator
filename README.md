@@ -2,9 +2,9 @@
 
 ## Description
 
-This project was an activity to link together node, npm inquirer, and jest as well as using constructors, classes, and Object Oriented Development.  The goal of this project was to automatically generate website populated with employees entered by the user from the command line.   
+This project was an activity to link together node, npm inquirer, and the javascript testing framework "jest" as well as using constructors, classes, and Object Oriented Development.  The goal of this project was to automatically generate website populated with employees entered by the user from the command line.   
 
-This project helped me understand how the concept of object oriented programing and running tests to ensure the coding is working correctly. I learned how to install Jest and make sure it is one of the developmental dependencies in the node_modules.  I also learned how to create constructors and class objects and methods.  I learned how to refactor the code, making multiple, easier to read files instead of one long coding file and how to create an extention class that uses inheritance to pass properties onto other objects.  I reinforced how to use the node file system to write new files and copy o thers. I also learned how to destructure arrays and objects to create variables from object properties. 
+This project helped me understand how the concept of Object Oriented Development and running tests to ensure the code will work correctly. I learned how to install Jest and make sure it is one of the developmental dependencies in the node_modules.  I also learned how to create constructors and class objects and methods.  I learned how to refactor the code, making multiple, easier to read files instead of one long coding file and how to create an extention class that uses inheritance to pass properties onto other objects.  I reinforced how to use the node file system to write new files and copy o thers. I also learned how to destructure arrays and objects to create variables from object properties. 
 
 ## Table of Contents
 
