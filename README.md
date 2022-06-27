@@ -23,7 +23,8 @@ The user will receive a series of prompts, asking for members of their team.  It
 
 When the user is finished entering their information, an html file is created with "My Team" on top, and then a listing of the members of the team, their role, their ID, their email, and their office number, gitHub username, and school based on whether they are managers, engineers, or interns, respectively.  When the user clicks on an email, an autopopulated email server pops up.  When they click on a gitHub address, they are taken to that gitHub user's homepage.  
 
-![Image of Prompt Screen](https://user-images.githubusercontent.com/64170123/175839533-88d5ec20-e3d5-4a27-a98d-33a849d4027f.jpg)
+![Image of Prompt Screen](https://user-images.githubusercontent.com/64170123/175839620-3471a490-c559-4d3a-a634-446e7d4d558b.jpg)
+
 
 ![Image of html screen](https://user-images.githubusercontent.com/64170123/175839531-bd67df5d-4957-4967-8e30-7879f279c615.jpg)
 
