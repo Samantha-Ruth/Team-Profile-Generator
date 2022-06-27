@@ -36,9 +36,9 @@ link to video of command line prompts: https://drive.google.com/file/d/13xj8Nfie
 
 Link to video of project: 
 
-The link to the project is here: 
+The link to the project is here: https://samantha-ruth.github.io/Team-Profile-Generator/
 
-The url of the Git repository is here:
+The url of the Git repository is here: https://github.com/Samantha-Ruth/Team-Profile-Generator
 
 ## Questions
 
