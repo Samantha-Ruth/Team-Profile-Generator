@@ -23,6 +23,8 @@ The user will receive a series of prompts, asking for members of their team.  It
 
 When the user is finished entering their information, an html file is created with "My Team" on top, and then a listing of the members of the team, their role, their ID, their email, and their office number, gitHub username, and school based on whether they are managers, engineers, or interns, respectively.  When the user clicks on an email, an autopopulated email server pops up.  When they click on a gitHub address, they are taken to that gitHub user's homepage.  
 
+Unfortunately, I have not yet created the link between the objects and the create page function.  I am still working on it! So sorry. 
+
 ![Image of Prompt Screen](https://user-images.githubusercontent.com/64170123/175839620-3471a490-c559-4d3a-a634-446e7d4d558b.jpg)
 
 
