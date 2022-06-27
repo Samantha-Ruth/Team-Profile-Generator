@@ -88,9 +88,7 @@ const promptEmployee = () => {
         }
         if (answers.newTeamMember === "I don't want to add any more team members") {
             console.log(teamMembers);
-            console.log(teamMembers[0].managerName);
-            managerName => (teamMember[0].managerName);
-            console.log(managerName);
+            console.log('Thank you! Team members have been added!')
             return
         }
     })
@@ -227,19 +225,18 @@ const promptIntern = internData => {
         ])
         .then((answers) => {
             teamMembers.push(answers)
-            console.log(answers)
             promptEmployee()
         })
 }
 
 promptUser()
     .then(promptEmployee)
-    // .then(employeeData => {
-    //     return generateHtml(employeeData);
-    //     })
-    // .then(pageHTML => {
-    //     return writeFile(pageHTML);
-    //     })
+    .then(employeeData => {
+        return generateHtml(employeeData);
+        })
+    .then(pageHTML => {
+        return writeFile(pageHTML);
+        })
     // .then(writeFileResponse => {
     //     console.log(writeFileResponse);
     //     return copyFile();

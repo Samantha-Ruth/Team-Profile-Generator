@@ -19,9 +19,9 @@ const generateEmployee = employeeText => {
 }
 
 
-module.exports = templateData => {
+module.exports = employeeData => {
     // destructure page data by section
-    const { managerOffice, engineerGitHub, internSchool, ...header } = templateData;
+    const { managerName, managerID, managerEmail, managerOffice, ...rest } = employeeData;
     return `
     <!DOCTYPE html>
 <html>
